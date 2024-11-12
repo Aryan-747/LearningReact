@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 function App() {
 
@@ -12,13 +12,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+          <Header/>
            Hello {handleNameChange()}!
-        </p>
         
-      </header>
     </div>
   );
 }

@@ -2,13 +2,10 @@ import React from 'react'
 
 const Header = () => {
 
-  const headerStyle = {
-    backgroundColor: 'cyan',
-    color: '#fff'
-  }
+  
 
   return (
-    <header style={headerStyle}>
+    <header>
         <h1> Random List</h1>
     </header>
   )

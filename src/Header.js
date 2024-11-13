@@ -1,14 +1,17 @@
 import React from 'react'
 
 const Header = () => {
+
+  const headerStyle = {
+    backgroundColor: 'cyan',
+    color: '#fff'
+  }
+
   return (
-    <header style={{
-      backgroundColor: 'aquamarine',
-      color: '#fff'
-    }}>
+    <header style={headerStyle}>
         <h1> Random List</h1>
     </header>
   )
 }
 
-export default Header
+export default Header;

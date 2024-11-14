@@ -5,6 +5,7 @@ const Content = () => {
 
 
     const [name,setName] = useState('Davey');
+    const [count,setCount] = useState(0);
 
     const  handleNameChange = () =>
     {
@@ -12,6 +13,12 @@ const Content = () => {
         const int = Math.floor(Math.random()*5);
 
         setName(names[int]);
+    }
+
+    const handleCount = () =>
+    {
+      setCount(count+1);
+      console.log(count);
     }
 
     const handleClick = () => {
@@ -30,6 +37,7 @@ const Content = () => {
 
     <button onClick={handleClick}>Click It</button>
     <button onClick={handleNameChange}>Change Name</button>
+    <button onClick ={handleCount}>Check Count</button>
 
 </main>
   )

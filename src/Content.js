@@ -1,31 +1,35 @@
 import React from 'react'
+import {useState} from 'react';
 
 const Content = () => {
+
+
+    const [name,setName] = useState('Davey');
 
     const  handleNameChange = () =>
     {
         const names = ['Davey','Mikel','Bob','Todd','Kevin De Bruyne'];
         const int = Math.floor(Math.random()*5);
 
-        return names[int];
+        setName(names[int]);
     }
 
     const handleClick = () => {
       console.log("You clicked it");
     }
     
-    const handleClick2 = () => {
-      console.log(`${handleNameChange()} was Clicked`);
+    const handleClick2 = (name) => {
+      console.log(`${name} was Clicked`);
     }
 
   return (
 <main>
     <p>
-        Hello {handleNameChange()}!
+        Hello {name}!
     </p>
 
     <button onClick={handleClick}>Click It</button>
-    <button onClick={handleClick2}>Click Me!</button>
+    <button onClick={handleNameChange}>Change Name</button>
 
 </main>
   )

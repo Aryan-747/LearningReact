@@ -11,7 +11,11 @@ const Content = () => {
     }
 
     const handleClick = () => {
-      console.log("You clicked it")
+      console.log("You clicked it");
+    }
+    
+    const handleClick2 = () => {
+      console.log(`${handleNameChange()} was Clicked`);
     }
 
   return (
@@ -21,6 +25,7 @@ const Content = () => {
     </p>
 
     <button onClick={handleClick}>Click It</button>
+    <button onClick={handleClick2}>Click Me!</button>
 
 </main>
   )

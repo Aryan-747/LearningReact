@@ -25,10 +25,6 @@ const Content = () => {
       console.log("You clicked it");
     }
     
-    const handleClick2 = (name) => {
-      console.log(`${name} was Clicked`);
-    }
-
   return (
 <main>
     <p>

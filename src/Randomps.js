@@ -4,7 +4,7 @@ function RandomPassword() {
   const [password, setPassword] = useState('');
 
   const generatePassword = () => {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuv2332123322111';
     const passwordLength = 12;
     let password = '';
 
